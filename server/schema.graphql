@@ -1,3 +1,12 @@
+# Array of Jobs where Job is a custom dataType for jobs
 type Query {
-  greeting: String
+  jobs: [Job]
+}
+
+# ID is similar to string, but it is a unique identifier not intended as a human readable string
+# ! exclaimation mark explains that the filed should never be null i.e. its not optional
+type Job {
+  id: ID!
+  title: String
+  description: String
 }

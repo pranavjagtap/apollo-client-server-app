@@ -1,5 +1,5 @@
 const { DataStore } = require('notarealdb');
-
+// notarealdb package is used instead of actual db
 const store = new DataStore('./data');
 
 module.exports = {
